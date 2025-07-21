@@ -3,25 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 body {
     min-height: 100vh;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+    padding: 1rem 10rem;
 }
 
 /* Header */
 header {
     background-color: #e0e0e0;
     color: #010101;
-    justify-content: space-between;
     padding: 1rem 5rem;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between !important;
 }
 .header__title {
-    color: 010101;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bold;;
 }
 .header__nav ul {
     list-style: none;
@@ -38,14 +43,12 @@ header {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 1rem 2rem;
-    margin: 1rem 10rem;
     border-radius: .5rem;
 }
 .search__form_field {
     background-color: #fff;
     border-radius: .5rem;
     border: 1px solid #ccc;
-    width: 100%;
     overflow: hidden;
     padding: .25rem;
 }
@@ -64,24 +67,17 @@ header {
 .search__form_field__icon {
     grid-area: ic;
 }
-.search__submit_button {
-    background-color: #007bff;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-}
 
 /* Packages */
 #packages {
-    padding: 1rem 10rem;
 }
 .packages__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
+}
+.package:nth-child(odd):last-child {
+    transform: translateX(50%);
 }
 .package {
     display: grid;
@@ -117,7 +113,16 @@ header {
 .flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
+}
+.flex_grow {
+    flex: 1 0 auto;
+}
+
+.gap-sm {
+    gap: .25rem;
 }
 
 .button {
@@ -126,8 +131,27 @@ header {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: .5rem;
-    cursor: pointer;
     font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+.button:active {
+    background-color: #0056b3;
+    outline: 2px solid #ccc;
+    transform: scale(0.95);
+}
+
+.clickable {
+    cursor: pointer;
+}
+.clickable:hover {
+    transform: scale(1.05);
+}
+.clickable:active {
+    transform: scale(0.95);
 }
 
 .section_title {
