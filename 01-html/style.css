@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #e0e0e0;
+    color: #010101;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.header__title {
+    color: 010101;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.header__nav ul {
+    list-style: none;
+}
+.header__nav a {
+    text-decoration: none;
+    color: #010101;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Search */
+#search {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+    margin: 1rem 10rem;
+    border-radius: .5rem;
+}
+.search__form_field {
+    background-color: #fff;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    overflow: hidden;
+    padding: .25rem;
+}
+.search__form_field__container {
+    display: grid;
+    grid-template-areas: 'x lb' 'ic in';
+}
+.search__form_field__label {
+    grid-area: lb;
+    font-size: .75em;
+}
+.search__form_field__input {
+    grid-area: in;
+    border: none
+}
+.search__form_field__icon {
+    grid-area: ic;
+}
+.search__submit_button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Packages */
+#packages {
+    padding: 1rem 10rem;
+}
+.packages__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.package {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    background: #f0f0f0;
+    background-image: radial-gradient(circle at 90% 85%, #007bff5f, #0000 15%);
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.package__data {
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+    height: 100%;
+}
+.package__value {
+    font-size: 1.25rem;
+    font-weight: thin;
+}
+.package__buy {
+    margin-left: auto;
+}
+
+/* Footer */
+#about {
+    background-color: #e0e0e0;
+    padding: 1rem 10rem;
+    flex: 1 0 auto;
+}
+
+/* General */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.section_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}

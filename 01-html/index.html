@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <header id="home" class="flex">
+        <p class="header__title flex">
+            <i class="material-symbols-outlined" style="font-size:3rem;">airplane_ticket</i>
+            <span class="title">01 - HTML</span>
+        </p>
+        <nav class="header__nav">
+            <ul class="flex">
+                <li>
+                    <a href="#home" class="flex"><span>Home</span><i class="material-symbols-outlined">home</i></a>
+                </li>
+                <li>
+                    <a href="#search" class="flex"><span>Busca</span><i class="material-symbols-outlined">search</i></a>
+                </li>
+                <li>
+                    <a href="#packages" class="flex"><span>Pacotes</span><i class="material-symbols-outlined">luggage</i></a>
+                </li>
+                <li>
+                    <a href="#about" class="flex"><span>Sobre</span><i class="material-symbols-outlined">info</i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="search">
+            <h2 class="section_title">Busca de Pacotes</h2>
+            <form class="search__form flex">
+                <div class="search__form_field">
+                    <label class="search__form_field__container">
+                        <span class="search__form_field__icon material-symbols-outlined">flight_takeoff</span>
+                        <span class="search__form_field__label">Origem</span>
+                        <input class="search__form_field__input" type="text" placeholder="País, Cidade..." required>
+                    </label>
+                </div>
+                <div class="search__form_field">
+                    <label class="search__form_field__container">
+                        <span class="search__form_field__icon material-symbols-outlined">flight_land</span>
+                        <span class="search__form_field__label">Destino</span>
+                        <input class="search__form_field__input" type="text" placeholder="País, Cidade..." required>
+                    </label>
+                </div>
+                <div class="search__form_field">
+                    <label class="search__form_field__container">
+                        <span class="search__form_field__icon material-symbols-outlined">calendar_month</span>
+                        <span class="search__form_field__label">Entrada</span>
+                        <input class="search__form_field__input" type="date" placeholder="Data de Entrada" required>
+                    </label>
+                </div>
+                <div class="search__form_field">
+                    <label class="search__form_field__container">
+                        <span class="search__form_field__icon material-symbols-outlined">calendar_month</span>
+                        <span class="search__form_field__label">Saída</span>
+                        <input class="search__form_field__input" type="date" placeholder="Data de Saída" required>
+                    </label>
+                </div>
+                <div class="search__form_field">
+                    <label class="search__form_field__container">
+                        <span class="search__form_field__icon material-symbols-outlined">bed</span>
+                        <span class="search__form_field__label">Quartos</span>
+                        <input class="search__form_field__input" type="number" placeholder="Quartos" required>
+                    </label>
+                </div>
+                <button class="search__submit_button flex">
+                        <span class="search__form_field__icon material-symbols-outlined">search</span>
+                        <span>Buscar</span>
+                </button>
+            </form>
+        </section>
+        <section id="packages">
+            <h2 class="section_title">Pacotes de Viagem</h2>
+            <div class="packages__container">
+                <div class="package">
+                    <img src="https://placehold.co/200X150" alt="Package Image">
+                    <div class="package__data">
+                        <div class="package__data__header flex">
+                            <h2 class="package__title">Pacote 1</h2>
+                            <p class="package__value">R$ 1500</p>
+                        </div>
+                        <p class="package__description">Descrição do pacote 1. Inclui passagens aéreas e hospedagem.</p>
+                        <a class="package__buy button">Comprar</a>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="https://placehold.co/200X150" alt="Package Image">
+                    <div class="package__data">
+                        <div class="package__data__header flex">
+                            <h2 class="package__title">Pacote 1</h2>
+                            <p class="package__value">R$ 1500</p>
+                        </div>
+                        <p class="package__description">Descrição do pacote 1. Inclui passagens aéreas e hospedagem.</p>
+                        <a class="package__buy button">Comprar</a>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="https://placehold.co/200X150" alt="Package Image">
+                    <div class="package__data">
+                        <div class="package__data__header flex">
+                            <h2 class="package__title">Pacote 1</h2>
+                            <p class="package__value">R$ 1500</p>
+                        </div>
+                        <p class="package__description">Descrição do pacote 1. Inclui passagens aéreas e hospedagem.</p>
+                        <a class="package__buy button">Comprar</a>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="https://placehold.co/200X150" alt="Package Image">
+                    <div class="package__data">
+                        <div class="package__data__header flex">
+                            <h2 class="package__title">Pacote 1</h2>
+                            <p class="package__value">R$ 1500</p>
+                        </div>
+                        <p class="package__description">Descrição do pacote 1. Inclui passagens aéreas e hospedagem.</p>
+                        <a class="package__buy button">Comprar</a>
+                    </div>
+                </div>
+                <div class="package">
+                    <img src="https://placehold.co/200X150" alt="Package Image">
+                    <div class="package__data">
+                        <div class="package__data__header flex">
+                            <h2 class="package__title">Pacote 1</h2>
+                            <p class="package__value">R$ 1500</p>
+                        </div>
+                        <p class="package__description">Descrição do pacote 1. Inclui passagens aéreas e hospedagem.</p>
+                        <a class="package__buy button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="about">
+
+    </footer>
+</body>
+</html>
